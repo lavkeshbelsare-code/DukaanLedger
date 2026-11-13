@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DukaanLedger | Company HQ & Super Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background: radial-gradient(circle at top left, #0f172a, #090d16 60%, #030712); color: #f8fafc; min-height: 100vh; }
+        .glass-panel { background: rgba(15, 23, 42, 0.65); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37); }
+        .glass-card { background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.07); }
+    </style>
+</head>
+<body class="antialiased p-4 sm:p-6 lg:p-8">
+    <div class="max-w-7xl mx-auto space-y-6">
+        <!-- Top Navigation Bar -->
+        <div class="glass-panel rounded-3xl p-4 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs uppercase shadow-md">DukaanLedger SaaS</span>
+                <span class="text-emerald-400 font-semibold text-xs">● Master Enterprise HQ</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <a href="admin.html" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold rounded-xl transition shadow-lg">Dukaan Malik Portal</a>
+                <a href="staff.html" class="px-4 py-2 bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold rounded-xl transition">Staff Window</a>
+                <a href="customer.html" class="px-4 py-2 bg-emerald-600 text-white text-xs font-bold rounded-xl transition">Customer Store</a>
+            </div>
+        </div>
+
+        <!-- Super Admin HQ Dashboard -->
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-6">
+            <div class="flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-600 to-indigo-700 text-white flex items-center justify-center text-2xl font-extrabold shadow-lg">
+                    <i class="fa-solid fa-building-shield"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-extrabold text-white">Company HQ & Super Admin Portal</h1>
+                    <p class="text-xs text-slate-400 mt-0.5">Oversee all registered Dukaan Malik profiles, branch requests, and enterprise revenue.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+                <div class="glass-card p-5 rounded-2xl">
+                    <span class="text-xs font-semibold uppercase text-slate-400">Total Registered Dukaans</span>
+                    <div class="text-2xl font-extrabold text-white mt-1">1 Approved</div>
+                </div>
+                <div class="glass-card p-5 rounded-2xl">
+                    <span class="text-xs font-semibold uppercase text-slate-400">Pending Approvals</span>
+                    <div class="text-2xl font-extrabold text-amber-400 mt-1">0 Pending</div>
+                </div>
+                <div class="glass-card p-5 rounded-2xl">
+                    <span class="text-xs font-semibold uppercase text-slate-400">Master Gross Volume</span>
+                    <div class="text-2xl font-extrabold text-emerald-400 mt-1">₹640</div>
+                </div>
+                <div class="glass-card p-5 rounded-2xl">
+                    <span class="text-xs font-semibold uppercase text-slate-400">SaaS Subscriptions</span>
+                    <div class="text-2xl font-extrabold text-indigo-400 mt-1">₹14,970</div>
+                </div>
+            </div>
+
+            <div class="glass-card rounded-3xl p-6 space-y-4">
+                <h2 class="font-bold text-base text-white">Dukaan Malik Branch Approvals</h2>
+                <div class="glass-panel-light p-4 rounded-2xl flex items-center justify-between border border-white/10">
+                    <div>
+                        <h4 class="font-bold text-sm text-white">Sharma Kirana & Cafe</h4>
+                        <p class="text-xs text-slate-400">Malik ID: <code class="text-purple-300 font-mono">malik123</code> • Status: <span class="text-emerald-400 font-bold">Approved</span></p>
+                    </div>
+                    <a href="admin.html" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold rounded-xl transition shadow-md">Open Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
